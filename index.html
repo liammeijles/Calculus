@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calculus</title>
+        <link rel="icon" type="x/icon" href="img/calc-icon.png">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Calculus™ by Liam Meijles</h1>
+        <p>
+            Welkom bij mijn online rekenmachine. Hier kun je op eenvoudige wijze moeilijke rekensommen oplossen. De rekenmachine werkt als volgt:<br><br>
+            <b>1.</b> Voer een primaire waarde in. Dit is de basiswaarde waarmee je wilt rekenen<br>
+            <b>2.</b> Selecteer een rekenmethode, zoals optellen, aftrekken, delen etc.<br>
+            <b>3.</b> Klik op de bereken knop om te rekenen. In veel gevallen moet je dan nog een secundaire waarde invullen, maar bij worteltrekken is dit niet nodig.<br>
+            <b>4.</b> De uitkomst van de som wordt weergegeven in een apart tekstvak, en de gehele uitwerking wordt onderaan getoond
+        </p>
+        <div id="rekenen">
+    <input type="number" id="waarde1" placeholder="Primaire waarde">
+    <select id="methode">
+        <option value="_">--Selecteer rekenmethode--</option>
+        <option value="+">Optellen</option>
+        <option value="-">Aftrekken</option>
+        <option value="x">Vermenigvuldigen</option>
+        <option value="/">Delen</option>
+        <option value="^">Macht</option>
+        <option value="√">Wortel</option>
+        <option value="%">Percentage</option>
+    </select>
+    <button onclick="Bereken()">Bereken</button>
+    <!--<img src="img/flashlogo.png" onclick="Bereken()" height="30px">-->
+    <input type="number" id="uitkomst" placeholder="Antwoord" disabled>
+        <input id="uitwerking" type="text" placeholder="Uitwerking" disabled>
+        </div>
+    <script src="js/calculator.js"></script>
+    </body>
+</html>

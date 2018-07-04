@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {font-family: 'Roboto', sans-serif;}
+body {
+    background-color: aquamarine; 
+}
+#uitwerking {
+    font-family: 'VT323', monospace;
+}
+h1 {
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    color: white;
+    background-color: orange;
+    border-radius: 50px;
+    font-size: 30px;
+}
+p {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 16px;
+}
+#rekenen {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    background-color: gray;
+    padding: 30px;
+}
+input, select, option, button {
+    font-size: 16px;
+    padding: 5px;
+}
+#uitwerking {
+    width: 99%;
+    padding: auto;
+    grid-area: span 1 / span 4;
+    background-color: cyan;
+    border: 3px solid darkcyan; 
+    font-size: 30px;
+    padding: 3px;
+    color: black;
+}
+#waarde1, #uitkomst {
+    border: 2px solid darkorange;
+    background: white;
+}
+#methode, button {
+    border: 2px solid darkorange;
+    background: darkorange;
+    color: white;
+}
+@media screen and (max-width: 850px) {
+    body {
+        background-color: lightgreen;
+    }
+    #rekenen {
+        grid-template-columns: auto auto;
+        width: 80vw;
+    }
+    p, h1 {
+        width: 70vw;
+    }
+    input, #uitwerking {
+        grid-area: span 1 / span 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    select, button {
+        grid-area: span 1 / span 2;
+    }
+    #rekenen {
+        padding: 15px;
+    }
+}
